@@ -10,17 +10,19 @@ import { ArrowRight } from 'lucide-react'
 import UserAccountNav from './UserAccountNav'
 import MobileNav from './MobileNav'
 
+
+
 const Navbar = () => {
   const { getUser } = getKindeServerSession()
   const user = getUser()
 
   return (
-    <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
+    <nav className='flex justify-center items-center sticky h-14 mt-4 inset-x-0 top-0 z-30 w-full backdrop-blur-xl   transition-all'>
       <MaxWidthWrapper>
-        <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
+        <div className='flex h-14 items-center justify-between border-b border-zinc-950'>
           <Link
             href='/'
-            className='flex z-40 font-semibold'>
+            className='flex z-40 text-2xl font-bold'>
             <span>quill.</span>
           </Link>
 
@@ -47,6 +49,7 @@ const Navbar = () => {
                 <RegisterLink
                   className={buttonVariants({
                     size: 'sm',
+                    className: ' rounded-xl', 
                   })}>
                   Get started{' '}
                   <ArrowRight className='ml-1.5 h-5 w-5' />
@@ -75,6 +78,8 @@ const Navbar = () => {
               </>
             )}
           </div>
+          
+
         </div>
       </MaxWidthWrapper>
     </nav>

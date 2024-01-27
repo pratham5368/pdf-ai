@@ -18,7 +18,7 @@ export default function Home() {
           <span className='text-blue-600'>documents</span>{' '}
           in seconds.
         </h1>
-        <p className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
+        <p className='mt-5 max-w-prose text-white sm:text-lg'>
           Quill allows you to have conversations with any
           PDF document. Simply upload your file and start
           asking questions right away.
@@ -27,7 +27,7 @@ export default function Home() {
         <Link
           className={buttonVariants({
             size: 'lg',
-            className: 'mt-5',
+            className: 'mt-5 rounded-xl',
           })}
           href='/dashboard'
           target='_blank'>
@@ -61,7 +61,7 @@ export default function Home() {
                     width={1364}
                     height={866}
                     quality={100}
-                    className='rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'
+                    className='rounded-lg bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'
                   />
                 </div>
               </div>
@@ -86,10 +86,10 @@ export default function Home() {
       <div className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
-            <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
+            <h2 className='mt-2 font-bold text-4xl text-white sm:text-5xl'>
               Start chatting in minutes
             </h2>
-            <p className='mt-4 text-lg text-gray-600'>
+            <p className='mt-4 text-lg text-gray-200'>
               Chatting to your PDF files has never been
               easier than with Quill.
             </p>
@@ -106,7 +106,7 @@ export default function Home() {
               <span className='text-xl font-semibold'>
                 Sign up for an account
               </span>
-              <span className='mt-2 text-zinc-700'>
+              <span className='mt-2 text-white'>
                 Either starting out with a free plan or
                 choose our{' '}
                 <Link
@@ -126,7 +126,7 @@ export default function Home() {
               <span className='text-xl font-semibold'>
                 Upload your PDF file
               </span>
-              <span className='mt-2 text-zinc-700'>
+              <span className='mt-2 text-white'>
                 We&apos;ll process your file and make it
                 ready for you to chat with.
               </span>
@@ -140,7 +140,7 @@ export default function Home() {
               <span className='text-xl font-semibold'>
                 Start asking questions
               </span>
-              <span className='mt-2 text-zinc-700'>
+              <span className='mt-2 text-white'>
                 It&apos;s that simple. Try out Quill today -
                 it really takes less than a minute.
               </span>
