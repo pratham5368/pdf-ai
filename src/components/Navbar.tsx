@@ -17,7 +17,7 @@ const Navbar = () => {
   const user = getUser()
 
   return (
-    <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full   bg-slate-950  transition-all'>
+    <nav className='flex justify-center items-center sticky h-14 mt-4 inset-x-0 top-0 z-30 w-full backdrop-blur-xl   transition-all'>
       <MaxWidthWrapper>
         <div className='flex h-14 items-center justify-between border-b border-zinc-950'>
           <Link
